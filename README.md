@@ -11,10 +11,10 @@ When I get close enough to the wall that my car is no longer protruding from the
 
 The flow of the parking sensor logic is demonstrated in the flowchart below. Ultrasonic distance measurements are low-pass filtered using a cutoff frequency of 50Hz to reject high-frequency noise.
 
-<img src="flowchart.png" width="300"/>
+<img src="images/flowchart.png" width="300"/>
 
 
 ## Circuit Diagram
-<img src="parking_sensor_diagram.JPG" width="400" height="400"/>
+<img src="images/parking_sensor_diagram.JPG" width="400" height="400"/>
 
 Could this problem have been solved by sticking something soft to the wall? Sure, but where's the fun in that?
