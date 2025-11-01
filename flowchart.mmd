@@ -1,0 +1,27 @@
+%%{init: {"flowchart": {"curve": "basis"}}}%%
+flowchart TD
+
+    A[Enter low power for 4 seconds]
+    --> B(Is there a measurable object?)
+
+    B -->|No| A
+    B -->|Yes| C
+
+    C(Is the obstacle getting closer?)
+    C -->|Yes| D
+    C -->|No| A
+
+    D[Green LED on] --> E(Is the obstacle within 10cm?)
+    E -->|No| E
+    E -->|Yes| F
+
+    F[
+        Green LED off
+        Red LED on
+    ]
+
+    F --> G(Has the car been stopped for 5 seconds?)
+    G -->|No| G
+    G -->|Yes| H[Flash both LEDs]
+
+    H --> A
